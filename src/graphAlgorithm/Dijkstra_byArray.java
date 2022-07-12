@@ -2,7 +2,7 @@ package graphAlgorithm;
 
 import java.util.Arrays;
 
-public class Dijkstra_1 {
+public class Dijkstra_byArray {
     static int INF = 1_000_000_000;
     static int[][] arr = {
             {0, 2, 5, 1, INF, INF},

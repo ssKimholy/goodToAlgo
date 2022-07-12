@@ -3,7 +3,7 @@ package graphAlgorithm;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Dijkstra_one {
+public class Dijkstra_byList_linear {
     static ArrayList<ArrayList<Node>> list = new ArrayList<>();
     static boolean[] visited;
     static int[] d;

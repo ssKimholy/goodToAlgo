@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class Dijkstra_two {
+public class Dijkstra_byHeap {
     static ArrayList<ArrayList<Node>> list = new ArrayList<>();
     static boolean[] visited;
     static int[] d;
