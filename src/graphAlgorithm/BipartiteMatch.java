@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 class HelloWorld {
@@ -20,8 +21,8 @@ class HelloWorld {
         graph.get(3).add(2);
         
         for (int i = 1; i <= n; i++) {
-            Arrays.fill(visited, false);
-            if (dfs(i)) count++;
+            Arrays.fill(visited, false); // 한 번 돌때마다 초기화해야 미카운트를 막을 수 있다.
+            if (dfs(i)) count++; // dfs가 true면 해당 번호가 정상적인 매칭이 됐다는 뜻이다.
         }
         
         for (int i = 1; i <= n; i++) {
@@ -36,6 +37,7 @@ class HelloWorld {
                 visited[i] = true;
                 
                 if (answer[i] == 0 || dfs(answer[i])) {
+                    // 해당 번호 그룹이 비어있거나 해당 자리 주인이 양보할 수 있다면 그 자리 차지.
                     answer[i] = n;
                     return true;
                 }
