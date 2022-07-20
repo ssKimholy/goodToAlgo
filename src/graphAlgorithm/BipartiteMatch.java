@@ -1,7 +1,8 @@
+package graphAlgorithm;
 
 import java.util.*;
 
-class HelloWorld {
+class BipartiteMatch {
     static int[] answer;
     static boolean[] visited;
     static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
